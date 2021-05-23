@@ -1,0 +1,2097 @@
+/* @font-face {
+  font-family: "Natural";
+  src: url("../font/Natural.ttf") format ("truetype");
+} */
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
+  overflow-y: hidden;
+}
+
+/* .titulo{
+  cursor: pointer;
+} */
+
+
+
+h1{
+  font-family: Caveat;
+  text-align: center;
+  color: white;
+  position: absolute;
+  font-size: 190px;
+  width: 100%;
+  margin-top: 18%;
+}
+
+h2 {
+  font-family: Caveat;
+  text-align: center;
+  position: absolute;
+  font-size: 48px;
+  width: 100%;
+  margin-top: 34%;
+  color: #3a3a3a;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.top {
+  height: 100vh;
+  width: 100vw;
+  background-image: url("../img/fondo_inicio.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+}
+.continuar1{
+  position: absolute;
+  margin-top: 42%;
+  margin-left: 43%;
+  animation: escalaContinuar 0.7s infinite;
+  cursor: pointer;
+}
+
+@keyframes escalaContinuar{
+  0%{
+    transform: scale(1);
+  }
+  50%{
+    transform: scale(1.5);
+  }
+  100%{
+    transform: scale(1);
+  }
+}
+
+main {
+  position: absolute;
+  top: 100vh;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-image: url("../img/fondo_menu.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  transition: 0.7s;
+}
+
+.mostrar-main {
+  top: 0;
+  z-index: 1;
+  
+}
+
+#menu {
+  
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 46px;
+  -moz-border-radius: 46px;
+  -webkit-border-radius: 46px;
+  background-color: #999999aa;
+  padding: 0;
+  list-style: none;
+}
+
+#menu > li {
+  padding: 10px 40px;
+  cursor: pointer;
+  display: none;
+}
+
+.menu > li{
+  display: inline-block;
+}
+
+/* #menu > li:first-of-type {
+  border-radius: 46px 0 0 46px;
+}
+#menu > li:last-of-type {
+  border-radius: 0 46px 46px 0;
+} */
+
+#menu > li:hover {
+  background-color: #555;
+}
+
+#info1-sinColor,
+#info1-color{
+  border-radius: 46px 0 0 46px;
+}
+
+#geotermica1-sinColor,
+#geotermica1-color{
+  border-radius: 0 46px 46px 0;
+}
+
+#menu-info-color,
+#menu-info-sinColor{
+  border-radius: 46px 46px 0px 0px;
+}
+
+#menu-geotermica-color,
+#menu-geotermica-sinColor{
+  border-radius:  0px 0px 46px 46px;
+}
+
+#detalle {
+  
+  display: none;
+  position: absolute;
+  z-index: 99999;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-image: url("../img/fondo_menu.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+}
+
+#menu-detalle {
+  z-index: 9999999999;
+  position: absolute;
+  list-style: none;
+  top: 50%;
+  left: 0.7%;
+  transform: translateY(-50%);
+  padding: 0;
+  border-radius: 46px;
+  -moz-border-radius: 46px;
+  -webkit-border-radius: 46px;
+  background-color: #999999aa;
+}
+
+#menu-detalle > li {
+  display: none;
+  padding: 20px 7px;
+  cursor: pointer;
+  text-align: center;
+}
+
+/* #menu-detalle > li:first-of-type {
+  border-radius: 46px 46px 0 0;
+}
+#menu-detalle > li:last-of-type {
+  border-radius: 0 0 46px 46px;
+} */
+
+#menu-detalle > li:hover {
+  background-color: #555;
+}
+
+#detalle-cerrar {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  font-size: 40px;
+  cursor: pointer;
+  z-index: 9999;
+  transition: 0.5s;
+  color: #ffff;
+}
+
+.verde {
+  color: green !important;
+  /* animation: escalaVerde 1s infinite; */
+}
+/* @keyframes escalaVerde{
+  0%{
+    transform: scale(1);
+  }
+  50%{
+    transform: scale(2.5);
+  }
+  100%{
+    transform: scale(1);
+  }
+} */
+
+
+
+
+
+
+
+
+
+.mostrar {
+  display: block !important;
+}
+
+.mostrar1{
+  display: inline-block !important;
+}
+
+.detalle-item {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 100px;
+  height: 100vh;
+  width: calc(100vw - 100px);
+}
+
+#detalle-info {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-image: url("../img/fondos/info.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+}
+
+#detalle-solar {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-image: url("../img/fondos/solar.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+}
+
+
+
+#detalle-hidraulica {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-image: url("../img/fondos/hidraulica.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+}
+
+#detalle-biomasa {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-image: url("../img/fondos/biomasa.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+}
+
+#detalle-eolica {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-image: url("../img/fondos/eolica.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+}
+
+#detalle-geotermica {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-image: url("../img/fondos/geotermica.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+}
+
+.detalle-solar {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#solar-info-1 {
+  display: none;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  
+}
+
+
+.detalle-info {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+
+.detalle-eolica {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#eolica-info-2 {
+  display: none;
+  position: absolute;
+  top: 20%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+.detalle-geotermica {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#geotermica-info-2 {
+  display: none;
+  position: absolute;
+  top: 20%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+.detalle-hidraulica {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+#hidraulica-info-2 {
+  display: none;
+  position: absolute;
+  top: 37%;
+  left: 49%;
+  transform: translate(-50%, -50%);
+}
+
+.detalle-biomasa {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#biomasa-info-2 {
+  display: none;
+  position: absolute;
+  top: 20%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+.texto {
+  visibility: hidden;
+  font-family: 'Raleway', sans-serif;
+  font-size: 30pt;
+}
+
+.visibilidad {
+  visibility: visible;
+}
+
+#titulo-solar {
+  font-size: 90pt;
+  top: -38%;
+  text-shadow: 3px 3px #252525;
+}
+
+#continuar {
+  font-family: Caveat;
+  text-align: center;
+  color: rgb(235, 235, 235);
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+  position: absolute;
+  font-size: 40px;
+  width: 120%;
+  margin-left: -10%;
+  margin-top: 12%;
+}
+
+.visibleContinuar {
+  visibility: visible;
+  cursor: pointer;
+}
+
+.continuar {
+  visibility: hidden;
+}
+
+#img-mapa {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+}
+
+/* //////////// REGION SOLAR */
+
+.solar-contenedor{
+
+  display: none;
+  position: absolute;
+  border-radius: 26px;
+  -moz-border-radius: 26px;
+  -webkit-border-radius: 26px;
+  background-color: #9c9c9c7c;
+  width: 474px;
+  height: 204px;
+  margin: 55.5px;
+  /* padding: 5px; */
+  left:   530px;
+  top: 100px;
+   /* -moz-border-radius: 46px;
+    -webkit-border-radius: 46px; */
+}
+
+.solar-contenedor1{
+  display: none;
+  position: absolute;
+  border-radius: 26px;
+  -moz-border-radius: 26px;
+  -webkit-border-radius: 26px;
+  background-color:#9c9c9c7c;
+  width: 474px;
+  height: 204px;
+  margin: 55.5px;
+  left:   1100px;
+  top: 100px;
+   /* -moz-border-radius: 46px;
+    -webkit-border-radius: 46px; */
+}
+
+.solar-contenedor2{
+  
+  display: none;
+  position: absolute;
+  border-radius: 26px;
+  -moz-border-radius: 26px;
+  -webkit-border-radius: 26px;
+  background-color: #9c9c9c7c;
+  width: 474px;
+  height: 204px;
+  margin: 55.5px;
+  left:   1100px;
+  top: 370px;
+   /* -moz-border-radius: 46px;
+    -webkit-border-radius: 46px; */
+}
+.solar-contenedor3{
+  display: none;
+  position: absolute;
+  border-radius: 26px;
+  -moz-border-radius: 26px;
+  -webkit-border-radius: 26px;
+  background-color: #9c9c9c7c;
+  width: 474px;
+  height: 204px;
+  margin: 55.5px;
+  left:  530px;
+  top: 370px;
+   /* -moz-border-radius: 46px;
+    -webkit-border-radius: 46px; */
+}
+.contenedor-solar-grande{
+  display: none;
+  position: absolute;
+  border-radius: 26px;
+  -moz-border-radius: 26px;
+  -webkit-border-radius: 26px;
+  width: 1050px;
+  height: 204px;
+  left:  585px;
+  top: 700px;
+  background-color: #9c9c9c7c;
+}
+
+.contenedor-solar-grande > hr {
+  height: 190px;
+  width: 1px;
+  background-color: black;
+  border: none;
+}
+
+#texto-solar-5{
+  color: black;
+  position: absolute;
+  font-family: 'Raleway', sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  text-align: left;
+  margin-left: 50px;
+  margin-top: 40px;
+  width: 45%;
+  
+}
+#texto-solar-4{
+  color: black;
+  position: absolute;
+  font-family: 'Raleway', sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  text-align: left;
+  margin-left: 580px;
+  margin-top: 40px;
+  width: 45%;
+}
+
+.pros1{
+  position: absolute;
+  width: 3%;
+  top: 44px;
+  left: 10px;
+}
+#pros2{
+  top: 95px;
+}
+
+.contras1{
+  position: absolute;
+  width: 3%;
+  top: 44px;
+  left: 540px;
+}
+#contras2{
+  top: 95px;
+}
+
+.solar-estadistica{
+  position: absolute;
+  width: 28%;
+  margin-left: 40px;
+  margin-top: 40px;
+}
+
+#solar-estadistica1{
+  position: absolute;
+  width: 22%;
+  margin-left: 340px;
+}
+
+#solar-estadistica12{
+  position: absolute;
+  width: 22%;
+  margin-left: 185px;
+}
+
+#solar-estadistica123{
+  width: 22%;
+  margin-left: 30px;
+}
+
+
+#solar-estadistica3{
+  position: absolute;
+  margin-top: 70px;
+  margin-left: 30px;
+  width: 27%;
+}
+
+#solar-estadistica31{
+  position: absolute;
+  margin-left: 220px;
+  margin-top: 70px;
+  width: 27%;
+}
+
+#texto-solar-31{
+  color: black;
+  font-family: 'Raleway', sans-serif;
+  width: 5%;
+  text-align: justify;
+  top: -25px;
+  left: 160px;
+}
+
+#texto-solar-32{
+  color: black;
+  font-family: 'Raleway', sans-serif;
+  width: 5%;
+  text-align: justify;
+  top: -25px;
+  left: 340px;
+}
+
+
+#texto-solar {
+  color: black;
+  position: absolute;
+  font-family: 'Raleway', sans-serif;
+  font-size: 26px;
+  text-align: left;
+  margin-left: 173px;
+  margin-top: 60px;
+  width: 75%;
+}
+
+#texto-solar-1 {
+  color: black;
+  position: absolute;
+  font-family: 'Raleway', sans-serif;
+  font-size: 26px;
+  text-align: center;
+  margin-left: 50px;
+  margin-top: 115px;
+  width: 75%;
+}
+
+
+#texto-solar-2 {
+  color: black;
+  position: absolute;
+  font-family: 'Raleway', sans-serif;
+  font-size: 26px;
+  text-align: left;
+  margin-left: 130px;
+  margin-top: 60px;
+  width: 75%;
+}
+
+#texto-solar-3 {
+  color: black;
+  position: absolute;
+  font-family: 'Raleway', sans-serif;
+  font-size: 26px;
+  text-align: center;
+  margin-left: 0px;
+  margin-top: 10px;
+  width: 100%;
+}
+
+
+/* FIN REGION */
+
+/* REGION HIDRAULICA */
+
+.hidraulica-contenedor{
+
+  display: none;
+  position: absolute;
+  border-radius: 26px;
+  -moz-border-radius: 26px;
+  -webkit-border-radius: 26px;
+  background-color: #9c9c9c7c;
+  width: 474px;
+  height: 204px;
+  margin: 55.5px;
+  /* padding: 5px; */
+  left:   530px;
+  top: 100px;
+   /* -moz-border-radius: 46px;
+    -webkit-border-radius: 46px; */
+}
+
+.hidraulica-estadistica{
+  position: absolute;
+  width: 28%;
+  margin-left: 40px;
+  margin-top: 40px;
+}
+
+/* CONTENEDOR 1 */
+
+.hidraulica-contenedor1{
+  display: none;
+  position: absolute;
+  border-radius: 26px;
+  -moz-border-radius: 26px;
+  -webkit-border-radius: 26px;
+  background-color: #9c9c9c7c;
+  width: 474px;
+  height: 204px;
+  margin: 55.5px;
+  left:   1100px;
+  top: 100px;
+   /* -moz-border-radius: 46px;
+    -webkit-border-radius: 46px; */
+}
+
+#hidraulica-estadistica1{
+  position: absolute;
+  width: 27%;
+  margin-left: 20px;
+  margin-top: 60px;
+}
+
+/* #hidraulica-estadistica12{
+  position: absolute;
+  width: 22%;
+  margin-left: 185px;
+}
+
+#hidraulica-estadistica123{
+  width: 22%;
+  margin-left: 30px;
+} */
+
+/* CONTENEDOR 2 */
+
+.hidraulica-contenedor2{
+  
+  display: none;
+  position: absolute;
+  border-radius: 26px;
+  -moz-border-radius: 26px;
+  -webkit-border-radius: 26px;
+  background-color: #9c9c9c7c;
+  width: 474px;
+  height: 204px;
+  margin: 55.5px;
+  left:   1100px;
+  top: 370px;
+   /* -moz-border-radius: 46px;
+    -webkit-border-radius: 46px; */
+}
+
+#texto-agua {
+  color: black;
+  position: absolute;
+  font-family: 'Raleway', sans-serif;
+  font-size: 26px;
+  text-align: left;
+  margin-left: 173px;
+  margin-top: 60px;
+  width: 75%;
+}
+
+#texto-agua-1 {
+  color: black;
+  position: absolute;
+  font-family: 'Raleway', sans-serif;
+  font-size: 26px;
+  text-align: left;
+  margin-left: 170px;
+  margin-top: 55px;
+  width: 65%;
+}
+
+
+#texto-agua-2 {
+  color: black;
+  position: absolute;
+  font-family: 'Raleway', sans-serif;
+  font-size: 26px;
+  text-align: left;
+  margin-left: 130px;
+  margin-top: 60px;
+  width: 75%;
+}
+
+/* CONTENEDOR 3 */
+.hidraulica-contenedor3{
+  display: none;
+  position: absolute;
+  border-radius: 26px;
+  -moz-border-radius: 26px;
+  -webkit-border-radius: 26px;
+  background-color: #9c9c9c7c;
+  width: 474px;
+  height: 204px;
+  margin: 55.5px;
+  left:  530px;
+  top: 370px;
+   /* -moz-border-radius: 46px;
+    -webkit-border-radius: 46px; */
+}
+
+#hidraulica-estadistica3{
+  position: absolute;
+  margin-top: 70px;
+  margin-left: 30px;
+  width: 27%;
+}
+
+#hidraulica-estadistica31{
+  position: absolute;
+  margin-left: 220px;
+  margin-top: 70px;
+  width: 27%;
+}
+
+#texto-agua-3 {
+  color: black;
+  position: absolute;
+  font-family: 'Raleway', sans-serif;
+  font-size: 26px;
+  text-align: center;
+  margin-left: 0px;
+  margin-top: 10px;
+  width: 100%;
+}
+
+
+#texto-agua-31{
+  color: black;
+  font-family: 'Raleway', sans-serif;
+  width: 5%;
+  text-align: justify;
+  top: -25px;
+  left: 160px;
+}
+
+#texto-agua-32{
+  color: black;
+  font-family: 'Raleway', sans-serif;
+  width: 5%;
+  text-align: justify;
+  top: -25px;
+  left: 340px;
+}
+
+
+/* CONTENEDOR GRANDE */
+
+.contenedor-hidraulica-grande{
+  display: none;
+  position: absolute;
+  border-radius: 26px;
+  -moz-border-radius: 26px;
+  -webkit-border-radius: 26px;
+  width: 1050px;
+  height: 204px;
+  left:  585px;
+  top: 700px;
+  background-color: #9c9c9c7c;
+}
+
+.contenedor-hidraulica-grande > hr {
+  height: 190px;
+  width: 1px;
+  background-color: black;
+  border: none;
+}
+
+#texto-agua-5{
+  color: black;
+  position: absolute;
+  font-family: 'Raleway', sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  text-align: left;
+  margin-left: 50px;
+  margin-top: 40px;
+  width: 38%;
+  
+}
+#texto-agua-4{
+  color: black;
+  position: absolute;
+  font-family: 'Raleway', sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  text-align: left;
+  margin-left: 580px;
+  margin-top: 40px;
+  width: 45%;
+}
+
+
+
+
+/* FIN DE REGION */
+
+/* INICIO REGION BIOMASA */
+
+.biomasa-contenedor{
+
+  /* CONTENEDOR 0 */
+
+  display: none;
+  position: absolute;
+  border-radius: 26px;
+  -moz-border-radius: 26px;
+  -webkit-border-radius: 26px;
+  background-color: #9c9c9c7c;
+  width: 474px;
+  height: 204px;
+  margin: 55.5px;
+  /* padding: 5px; */
+  left:   530px;
+  top: 100px;
+   /* -moz-border-radius: 46px;
+    -webkit-border-radius: 46px; */
+}
+
+.biomasa-estadistica{
+  position: absolute;
+  width: 28%;
+  margin-left: 40px;
+  margin-top: 40px;
+}
+
+/* CONTENEDOR 1 */
+
+.biomasa-contenedor1{
+  display: none;
+  position: absolute;
+  border-radius: 26px;
+  -moz-border-radius: 26px;
+  -webkit-border-radius: 26px;
+  background-color: #9c9c9c7c;
+  width: 474px;
+  height: 204px;
+  margin: 55.5px;
+  left:   1100px;
+  top: 100px;
+   /* -moz-border-radius: 46px;
+    -webkit-border-radius: 46px; */
+}
+
+#biomasa-estadistica1{
+  position: absolute;
+  width: 27%;
+  margin-left: 20px;
+  margin-top: 60px;
+}
+
+
+/* CONTENEDOR 2 */
+
+
+.biomasa-contenedor2{
+  
+  display: none;
+  position: absolute;
+  border-radius: 26px;
+  -moz-border-radius: 26px;
+  -webkit-border-radius: 26px;
+  background-color: #9c9c9c7c;
+  width: 474px;
+  height: 204px;
+  margin: 55.5px;
+  left:   1100px;
+  top: 370px;
+   /* -moz-border-radius: 46px;
+    -webkit-border-radius: 46px; */
+}
+
+#texto-biomasa {
+  color: black;
+  position: absolute;
+  font-family: 'Raleway', sans-serif;
+  font-size: 26px;
+  text-align: left;
+  margin-left: 173px;
+  margin-top: 60px;
+  width: 75%;
+}
+
+#texto-biomasa-1 {
+  color: black;
+  position: absolute;
+  font-family: 'Raleway', sans-serif;
+  font-size: 26px;
+  text-align: center;
+  margin-left: 150px;
+  margin-top: 50px;
+  width: 60%;
+}
+
+
+#texto-biomasa-2 {
+  color: black;
+  position: absolute;
+  font-family: 'Raleway', sans-serif;
+  font-size: 26px;
+  text-align: left;
+  margin-left: 130px;
+  margin-top: 60px;
+  width: 75%;
+}
+
+/* CONTENEDOR 3 */
+.biomasa-contenedor3{
+  display: none;
+  position: absolute;
+  border-radius: 26px;
+  -moz-border-radius: 26px;
+  -webkit-border-radius: 26px;
+  background-color: #9c9c9c7c;
+  width: 474px;
+  height: 204px;
+  margin: 55.5px;
+  left:  530px;
+  top: 370px;
+   /* -moz-border-radius: 46px;
+    -webkit-border-radius: 46px; */
+}
+
+#biomasa-estadistica3{
+  position: absolute;
+  margin-top: 70px;
+  margin-left: 30px;
+  width: 27%;
+}
+
+#biomasa-estadistica31{
+  position: absolute;
+  margin-left: 220px;
+  margin-top: 70px;
+  width: 27%;
+}
+
+#texto-biomasa-3 {
+  color: black;
+  position: absolute;
+  font-family: 'Raleway', sans-serif;
+  font-size: 26px;
+  text-align: center;
+  margin-left: 0px;
+  margin-top: 10px;
+  width: 100%;
+}
+
+
+#texto-biomasa-31{
+  color: black;
+  font-family: 'Raleway', sans-serif;
+  width: 5%;
+  text-align: justify;
+  top: -25px;
+  left: 160px;
+}
+
+#texto-biomasa-32{
+  color: black;
+  font-family: 'Raleway', sans-serif;
+  width: 5%;
+  text-align: justify;
+  top: -25px;
+  left: 340px;
+}
+
+
+/* CONTENEDOR GRANDE */
+
+.contenedor-biomasa-grande{
+  display: none;
+  position: absolute;
+  border-radius: 26px;
+  -moz-border-radius: 26px;
+  -webkit-border-radius: 26px;
+  width: 1050px;
+  height: 204px;
+  left:  585px;
+  top: 700px;
+  background-color: #9c9c9c7c;
+}
+
+.contenedor-biomasa-grande > hr {
+  height: 190px;
+  width: 1px;
+  background-color: black;
+  border: none;
+}
+
+#texto-biomasa-5{
+  color: black;
+  position: absolute;
+  font-family: 'Raleway', sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  text-align: left;
+  margin-left: 50px;
+  margin-top: 40px;
+  width: 45%;
+  
+}
+#texto-biomasa-4{
+  color: black;
+  position: absolute;
+  font-family: 'Raleway', sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  text-align: left;
+  margin-left: 580px;
+  margin-top: 40px;
+  width: 45%;
+}
+
+
+
+
+/* FIN DE REGION */
+
+
+
+/* INICIO REGION EOLICA */
+
+
+.eolica-contenedor{
+
+  /* CONTENEDOR 0 */
+
+  display: none;
+  position: absolute;
+  border-radius: 26px;
+  -moz-border-radius: 26px;
+  -webkit-border-radius: 26px;
+  background-color: #9c9c9c7c;
+  width: 474px;
+  height: 204px;
+  margin: 55.5px;
+  /* padding: 5px; */
+  left:   530px;
+  top: 100px;
+   /* -moz-border-radius: 46px;
+    -webkit-border-radius: 46px; */
+}
+
+.eolica-estadistica{
+  position: absolute;
+  width: 28%;
+  margin-left: 40px;
+  margin-top: 40px;
+}
+
+/* CONTENEDOR 1 */
+
+.eolica-contenedor1{
+  display: none;
+  position: absolute;
+  border-radius: 26px;
+  -moz-border-radius: 26px;
+  -webkit-border-radius: 26px;
+  background-color: #9c9c9c7c;
+  width: 474px;
+  height: 204px;
+  margin: 55.5px;
+  left:   1100px;
+  top: 100px;
+   /* -moz-border-radius: 46px;
+    -webkit-border-radius: 46px; */
+}
+
+#eolica-estadistica1{
+  position: absolute;
+  width: 27%;
+  margin-left: 20px;
+  margin-top: 60px;
+}
+
+/* #eolica-estadistica12{
+  position: absolute;
+  width: 22%;
+  margin-left: 185px;
+}
+
+#eolica-estadistica123{
+  width: 22%;
+  margin-left: 30px;
+} */
+
+/* CONTENEDOR 2 */
+
+
+.eolica-contenedor2{
+  
+  display: none;
+  position: absolute;
+  border-radius: 26px;
+  -moz-border-radius: 26px;
+  -webkit-border-radius: 26px;
+  background-color: #9c9c9c7c;
+  width: 474px;
+  height: 204px;
+  margin: 55.5px;
+  left:   1100px;
+  top: 370px;
+   /* -moz-border-radius: 46px;
+    -webkit-border-radius: 46px; */
+}
+
+#texto-eolica {
+  color: black;
+  position: absolute;
+  font-family: 'Raleway', sans-serif;
+  font-size: 26px;
+  text-align: left;
+  margin-left: 173px;
+  margin-top: 60px;
+  width: 75%;
+}
+
+#texto-eolica-1 {
+  color: black;
+  position: absolute;
+  font-family: 'Raleway', sans-serif;
+  font-size: 26px;
+  text-align: left;
+  margin-left: 170px;
+  margin-top: 55px;
+  width: 65%;
+}
+
+
+#texto-eolica-2 {
+  color: black;
+  position: absolute;
+  font-family: 'Raleway', sans-serif;
+  font-size: 26px;
+  text-align: left;
+  margin-left: 130px;
+  margin-top: 60px;
+  width: 75%;
+}
+
+/* CONTENEDOR 3 */
+.eolica-contenedor3{
+  display: none;
+  position: absolute;
+  border-radius: 26px;
+  -moz-border-radius: 26px;
+  -webkit-border-radius: 26px;
+  background-color: #9c9c9c7c;
+  width: 474px;
+  height: 204px;
+  margin: 55.5px;
+  left:  530px;
+  top: 370px;
+   /* -moz-border-radius: 46px;
+    -webkit-border-radius: 46px; */
+}
+
+#eolica-estadistica3{
+  position: absolute;
+  margin-top: 70px;
+  margin-left: 30px;
+  width: 27%;
+}
+
+#eolica-estadistica31{
+  position: absolute;
+  margin-left: 220px;
+  margin-top: 70px;
+  width: 27%;
+}
+
+#texto-eolica-3 {
+  color: black;
+  position: absolute;
+  font-family: 'Raleway', sans-serif;
+  font-size: 26px;
+  text-align: center;
+  margin-left: 0px;
+  margin-top: 10px;
+  width: 100%;
+}
+
+
+#texto-eolica-31{
+  color: black;
+  font-family: 'Raleway', sans-serif;
+  width: 5%;
+  text-align: justify;
+  top: -25px;
+  left: 160px;
+}
+
+#texto-eolica-32{
+  color: black;
+  font-family: 'Raleway', sans-serif;
+  width: 5%;
+  text-align: justify;
+  top: -25px;
+  left: 340px;
+}
+
+
+/* CONTENEDOR GRANDE */
+
+.contenedor-eolica-grande{
+  display: none;
+  position: absolute;
+  border-radius: 26px;
+  -moz-border-radius: 26px;
+  -webkit-border-radius: 26px;
+  width: 1050px;
+  height: 204px;
+  left:  585px;
+  top: 700px;
+  background-color: #9c9c9c7c;
+}
+
+.contenedor-eolica-grande > hr {
+  height: 190px;
+  width: 1px;
+  background-color: black;
+  border: none;
+}
+
+#texto-eolica-5{
+  color: black;
+  position: absolute;
+  font-family: 'Raleway', sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  text-align: left;
+  margin-left: 50px;
+  margin-top: 40px;
+  width: 45%;
+  
+}
+#texto-eolica-4{
+  color: black;
+  position: absolute;
+  font-family: 'Raleway', sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  text-align: left;
+  margin-left: 580px;
+  margin-top: 40px;
+  width: 45%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* FIN REGION EOLICA */
+
+
+
+/* INICIO REGION GEOTERMICA */
+
+
+
+
+.geotermica-contenedor{
+
+  /* CONTENEDOR 0 */
+
+  display: none;
+  position: absolute;
+  border-radius: 26px;
+  -moz-border-radius: 26px;
+  -webkit-border-radius: 26px;
+  background-color: #9c9c9c7c;
+  width: 474px;
+  height: 204px;
+  margin: 55.5px;
+  /* padding: 5px; */
+  left:   530px;
+  top: 100px;
+   /* -moz-border-radius: 46px;
+    -webkit-border-radius: 46px; */
+}
+
+.geotermica-estadistica{
+  position: absolute;
+  width: 28%;
+  margin-left: 40px;
+  margin-top: 40px;
+}
+
+/* CONTENEDOR 1 */
+
+.geotermica-contenedor1{
+  display: none;
+  position: absolute;
+  border-radius: 26px;
+  -moz-border-radius: 26px;
+  -webkit-border-radius: 26px;
+  background-color: #9c9c9c7c;
+  width: 474px;
+  height: 204px;
+  margin: 55.5px;
+  left:   1100px;
+  top: 100px;
+   /* -moz-border-radius: 46px;
+    -webkit-border-radius: 46px; */
+}
+
+#geotermica-estadistica1{
+  position: absolute;
+  width: 27%;
+  margin-left: 20px;
+  margin-top: 60px;
+}
+
+/* #geotermica-estadistica12{
+  position: absolute;
+  width: 22%;
+  margin-left: 185px;
+}
+
+#geotermica-estadistica123{
+  width: 22%;
+  margin-left: 30px;
+} */
+
+/* CONTENEDOR 2 */
+
+
+.geotermica-contenedor2{
+  
+  display: none;
+  position: absolute;
+  border-radius: 26px;
+  -moz-border-radius: 26px;
+  -webkit-border-radius: 26px;
+  background-color: #9c9c9c7c;
+  width: 474px;
+  height: 204px;
+  margin: 55.5px;
+  left:   1100px;
+  top: 370px;
+   /* -moz-border-radius: 46px;
+    -webkit-border-radius: 46px; */
+}
+
+#texto-geotermica {
+  color: black;
+  position: absolute;
+  font-family: 'Raleway', sans-serif;
+  font-size: 26px;
+  text-align: left;
+  margin-left: 173px;
+  margin-top: 60px;
+  width: 75%;
+}
+
+#texto-geotermica-1 {
+  color: black;
+  position: absolute;
+  font-family: 'Raleway', sans-serif;
+  font-size: 26px;
+  text-align: left;
+  margin-left: 170px;
+  margin-top: 55px;
+  width: 65%;
+}
+
+
+#texto-geotermica-2 {
+  color: black;
+  position: absolute;
+  font-family: 'Raleway', sans-serif;
+  font-size: 26px;
+  text-align: left;
+  margin-left: 130px;
+  margin-top: 60px;
+  width: 75%;
+}
+
+/* CONTENEDOR 3 */
+.geotermica-contenedor3{
+  display: none;
+  position: absolute;
+  border-radius: 26px;
+  -moz-border-radius: 26px;
+  -webkit-border-radius: 26px;
+  background-color: #9c9c9c7c;
+  width: 474px;
+  height: 204px;
+  margin: 55.5px;
+  left:  530px;
+  top: 370px;
+   /* -moz-border-radius: 46px;
+    -webkit-border-radius: 46px; */
+}
+
+#geotermica-estadistica3{
+  position: absolute;
+  margin-top: 15px;
+  margin-left: -30px;
+  width: 47%;
+}
+
+#geotermica-estadistica31{
+  position: absolute;
+  margin-left: 220px;
+  margin-top: 70px;
+  width: 27%;
+}
+
+#texto-geotermica-3 {
+  color: black;
+  position: absolute;
+  font-family: 'Raleway', sans-serif;
+  font-size: 26px;
+  text-align: left;
+  margin-left: 150px;
+  margin-top: 35px;
+  width: 65%;
+}
+
+
+/* #texto-geotermica-31{
+  color: black;
+  font-family: 'Raleway', sans-serif;
+  width: 5%;
+  text-align: justify;
+  top: -25px;
+  left: 160px;
+}
+
+#texto-geotermica-32{
+  color: black;
+  font-family: 'Raleway', sans-serif;
+  width: 5%;
+  text-align: justify;
+  top: -25px;
+  left: 340px;
+} */
+
+
+/* CONTENEDOR GRANDE */
+
+.contenedor-geotermica-grande{
+  display: none;
+  position: absolute;
+  border-radius: 26px;
+  -moz-border-radius: 26px;
+  -webkit-border-radius: 26px;
+  width: 1050px;
+  height: 204px;
+  left:  585px;
+  top: 700px;
+  background-color: #9c9c9c7c;
+}
+
+.contenedor-geotermica-grande > hr {
+  height: 190px;
+  width: 1px;
+  background-color: black;
+  border: none;
+}
+
+#texto-geotermica-5{
+  color: black;
+  position: absolute;
+  font-family: 'Raleway', sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  text-align: left;
+  margin-left: 50px;
+  margin-top: 40px;
+  width: 45%;
+  
+}
+#texto-geotermica-4{
+  color: black;
+  position: absolute;
+  font-family: 'Raleway', sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  text-align: left;
+  margin-left: 580px;
+  margin-top: 40px;
+  width: 45%;
+}
+
+
+
+/* FIN DE REGION */
+
+/* INICIO REGION INFORMACION */
+
+
+.info-contenedor{
+
+  /* CONTENEDOR 0 */
+
+  display: none;
+  position: absolute;
+  border-radius: 26px;
+  -moz-border-radius: 26px;
+  -webkit-border-radius: 26px;
+  background-color: #9c9c9c7c;
+  width: 474px;
+  height: 204px;
+  margin: 55.5px;
+  /* padding: 5px; */
+  left:   430px;
+  top: 100px;
+   /* -moz-border-radius: 46px;
+    -webkit-border-radius: 46px; */
+}
+
+.info-estadistica{
+  position: absolute;
+  width: 28%;
+  margin-left: 40px;
+  margin-top: 40px;
+}
+
+/* CONTENEDOR 1 */
+
+.info-contenedor1{
+  display: none;
+  position: absolute;
+  border-radius: 26px;
+  -moz-border-radius: 26px;
+  -webkit-border-radius: 26px;
+  background-color: #9c9c9c7c;
+  width: 474px;
+  height: 204px;
+  margin: 55.5px;
+  left:   1000px;
+  top: 100px;
+   /* -moz-border-radius: 46px;
+    -webkit-border-radius: 46px; */
+}
+
+#info-estadistica1{
+  position: absolute;
+  width: 35%;
+  margin-left: 25px;
+}
+
+/* #info-estadistica12{
+  position: absolute;
+  width: 22%;
+  margin-left: 185px;
+}
+
+#info-estadistica123{
+  width: 22%;
+  margin-left: 30px;
+} */
+
+/* CONTENEDOR 2 */
+
+
+.info-contenedor2{
+  
+  display: none;
+  position: absolute;
+  border-radius: 26px;
+  -moz-border-radius: 26px;
+  -webkit-border-radius: 26px;
+  background-color: #9c9c9c7c;
+  width: 474px;
+  height: 204px;
+  margin: 55.5px;
+  left:   1000px;
+  top: 370px;
+   /* -moz-border-radius: 46px;
+    -webkit-border-radius: 46px; */
+}
+
+#texto-info {
+  color: black;
+  position: absolute;
+  font-family: 'Raleway', sans-serif;
+  font-size: 26px;
+  text-align: left;
+  margin-left: 173px;
+  margin-top: 45px;
+  width: 65%;
+}
+
+#texto-info-1 {
+  color: black;
+  position: absolute;
+  font-family: 'Raleway', sans-serif;
+  font-size: 26px;
+  text-align: left;
+  margin-left: 165px;
+  margin-top: 70px;
+  width: 75%;
+}
+
+
+#texto-info-2 {
+  color: black;
+  position: absolute;
+  font-family: 'Raleway', sans-serif;
+  font-size: 26px;
+  text-align: left;
+  margin-left: 130px;
+  margin-top: 40px;
+  width: 75%;
+}
+
+/* CONTENEDOR 3 */
+.info-contenedor3{
+  display: none;
+  position: absolute;
+  border-radius: 26px;
+  -moz-border-radius: 26px;
+  -webkit-border-radius: 26px;
+  background-color: #9c9c9c7c;
+  width: 474px;
+  height: 204px;
+  margin: 55.5px;
+  left:  430px;
+  top: 370px;
+   /* -moz-border-radius: 46px;
+    -webkit-border-radius: 46px; */
+}
+
+#info-estadistica3{
+  position: absolute;
+  margin-top: 60px;
+  margin-left: 30px;
+  width: 27%;
+}
+
+#info-estadistica31{
+  position: absolute;
+  margin-left: 220px;
+  margin-top: 70px;
+  width: 27%;
+}
+
+#texto-info-3 {
+  color: black;
+  position: absolute;
+  font-family: 'Raleway', sans-serif;
+  font-size: 26px;
+  text-align: left;
+  margin-left: 150px;
+  margin-top: 60px;
+  width: 80%;
+}
+
+
+#texto-info-31{
+  color: black;
+  font-family: 'Raleway', sans-serif;
+  width: 5%;
+  text-align: justify;
+  top: -25px;
+  left: 160px;
+}
+
+#texto-info-32{
+  color: black;
+  font-family: 'Raleway', sans-serif;
+  width: 5%;
+  text-align: justify;
+  top: -25px;
+  left: 340px;
+}
+
+
+/* CONTENEDOR GRANDE */
+
+.contenedor-info-grande{
+  display: none;
+  position: absolute;
+  border-radius: 26px;
+  -moz-border-radius: 26px;
+  -webkit-border-radius: 26px;
+  width: 1050px;
+  height: 204px;
+  left:  485px;
+  top: 700px;
+  background-color: #9c9c9c7c;
+}
+
+.contenedor-info-grande > hr {
+  height: 190px;
+  width: 1px;
+  background-color: black;
+  border: none;
+}
+
+#texto-info-5{
+  color: black;
+  position: absolute;
+  font-family: 'Raleway', sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  text-align: left;
+  margin-left: 50px;
+  margin-top: 40px;
+  width: 45%;
+  
+}
+#texto-info-4{
+  color: black;
+  position: absolute;
+  font-family: 'Raleway', sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  text-align: left;
+  margin-left: 580px;
+  margin-top: 40px;
+  width: 45%;
+}
+
+
+/* FIN DE REGION */
+
+/* #texto-info {
+  display: none;
+  font-family: 'Raleway', sans-serif;
+  font-size: 36px;
+  text-align: center;
+  top: 20px;
+  width: 50%;
+  left: 50vh;
+} */
+
+
+/* #agua-grafico {
+  display: none;
+  width: 17%;
+  margin-top: 100px;
+  margin-left: 140px;
+}
+
+
+#biomasa-grafico {
+  display: none;
+  width: 17%;
+  margin-top: 100px;
+  margin-left: 140px;
+}
+
+#eolica-grafico {
+  display: none;
+  width: 17%;
+  margin-top: 100px;
+  margin-left: 140px;
+}
+
+#geotermica-grafico {
+  display: none;
+  width: 17%;
+  margin-top: 100px;
+  margin-left: 140px;
+} */
+
+#solar-grafico,
+#geotermica-grafico,
+#eolica-grafico,
+#biomasa-grafico,
+#agua-grafico {
+  background: #9c9c9c7c;
+  display: none;
+  width: auto;
+  margin-top: 136px;
+  margin-left: 175px;
+  border-radius: 26px;
+  -moz-border-radius: 26px;
+  -webkit-border-radius: 26px;
+}
+
+/* //////////////////////////////// */
+
+#solar-info-1{
+  margin-top: -60px;
+  margin-left: -60px;
+  width: 220px;
+  animation: escala 1s infinite;
+}
+@keyframes escala{
+  0%{
+    transform: scale(1);
+  }
+  50%{
+    transform: scale(1.5);
+  }
+  100%{
+    transform: scale(1);
+  }
+}
+
+
+
+#biomasa-info-2{
+  margin-top: 70px;
+  margin-left: -280px;
+  width: 150px;
+  animation: escala 1s infinite;
+}
+@keyframes escala{
+  0%{
+    transform: scale(1);
+  }
+  50%{
+    transform: scale(1.5);
+  }
+  100%{
+    transform: scale(1);
+  }
+}
+
+#eolica-info-2{
+  margin-top: 40px;
+  margin-left: -200px;
+  width: 150px;
+  animation: escala 1s infinite;
+}
+@keyframes escala{
+  0%{
+    transform: scale(1);
+  }
+  50%{
+    transform: scale(1.5);
+  }
+  100%{
+    transform: scale(1);
+  }
+}
+
+#geotermica-info-2{
+  margin-top: 70px;
+  margin-left: -280px;
+  width: 150px;
+  animation: escala 1s infinite;
+}
+@keyframes escala{
+  0%{
+    transform: scale(1);
+  }
+  50%{
+    transform: scale(1.5);
+  }
+  100%{
+    transform: scale(1);
+  }
+}
+
+#hidraulica-info-2{
+  top: 12%;
+  margin-left: -55px;
+
+  animation: escala 1s infinite;
+}
+@keyframes escala{
+  0%{
+    transform: scale(1);
+  }
+  50%{
+    transform: scale(1.5);
+  }
+  100%{
+    transform: scale(1);
+  }
+}
+
+/*  */
+
+#info-1{
+  display: none;
+  position: absolute;
+  width: 330px;
+  height: 330px;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  margin-left: -205px;
+  margin-top: -205px;
+
+  animation: escala 1s infinite;
+}
+@keyframes escala{
+  0%{
+    transform: scale(1);
+  }
+  50%{
+    transform: scale(1.5);
+  }
+  100%{
+    transform: scale(1);
+  }
+}
+
+.continuar2{
+  display: none;
+  position: absolute;
+  z-index: 9 !important;
+  margin-top: 18%;
+  margin-left: 92%;
+  animation: escalaContinuar 0.9s infinite;
+  cursor: pointer;
+  
+}
+
+.w600 {
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.w500{
+  font-size: 26px;
+  font-weight: 500;
+}
+
+.continuar-menu{
+  position: absolute;
+  margin-top: -10px;
+  margin-left: -100px;
+  animation: escalaContinuar 0.7s infinite;
+  cursor: pointer;  
+}

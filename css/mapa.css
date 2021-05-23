@@ -1,0 +1,332 @@
+/* .mostrar {
+  display: block !important;
+} */
+
+body {
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  background-image: url("../img/mapa/fondoMapa.jpg");
+}
+
+#mapa1-contenedor {
+  z-index: 9;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#mapa1 {
+  max-height: 800px;
+}
+
+#cuyo-sub {
+  z-index: 9999999;
+  position: absolute;
+  top: 120px;
+  left: 50px;
+  cursor: pointer;
+}
+
+#region-cuyo,
+#cuyo-color {
+  display: none;
+  height: 220px;
+  width: 120px;
+}
+
+#pregunta-cuyo {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  width: auto;
+  height: auto;
+  left: 40px;
+  right: 40px;
+  display: none;
+  font-size: 45px;
+  text-align: justify;
+}
+
+#noa-sub {
+  z-index: 999999;
+  position: absolute;
+  top: -7px;
+  left: 60px;
+  cursor: pointer;
+}
+
+#region-noa,
+#noa-color {
+  display: none;
+  height: 217px;
+  width: 179px;
+}
+.shakeAnim{
+  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0);
+  /* filter: invert(100%); */
+  filter: invert(18%) sepia(92%) saturate(6771%) hue-rotate(358deg) brightness(52%) contrast(180%) drop-shadow(14px 14px 14px rgb(109, 109, 109));
+  /* filter: drop-shadow(8px 8px 8px red); */
+  /* filter: invert(15%) sepia(91%) saturate(7218%) hue-rotate(6deg) brightness(108%) contrast(119%); */
+}
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-10px, 0, 0);
+  }
+  
+  20%, 80% {
+    transform: translate3d(11px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-13px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(13px, 0, 0);
+  }
+}
+
+#pregunta-noa {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  width: auto;
+  height: auto;
+  left: 40px;
+  right: 40px;
+  display: none;
+  font-size: 45px;
+  text-align: justify;
+}
+
+#nea-sub {
+  z-index: 999999;
+  position: absolute;
+  top: 0px;
+  left: 195px;
+  cursor: pointer;
+}
+
+#region-nea,
+#nea-color {
+  display: none;
+  height: 185px;
+  width: 190px;
+}
+
+#pregunta-nea {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  width: auto;
+  height: auto;
+  left: 40px;
+  right: 40px;
+  display: none;
+  font-size: 45px;
+  text-align: justify;
+}
+
+#centro-sub {
+  z-index: 999999;
+  position: absolute;
+  top: 120px;
+  left: 90px;
+  cursor: pointer;
+}
+
+#region-centro,
+#centro-color {
+  display: none;
+  height: 300px;
+  width: 250px;
+}
+
+#pregunta-centro {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  width: auto;
+  height: auto;
+  left: 40px;
+  right: 40px;
+  display: none;
+  font-size: 45px;
+  text-align: justify;
+}
+
+#patagonia-sub {
+  z-index: 999999;
+  position: absolute;
+  top: 298px;
+  left: -15px;
+  cursor: pointer;
+}
+
+#region-patagonia,
+#patagonia-color {
+  display: none;
+  height: 510px;
+  width: 250px;
+}
+
+#pregunta-patagonia {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  width: auto;
+  height: auto;
+  left: 40px;
+  right: 40px;
+  display: none;
+  font-size: 45px;
+  text-align: justify;
+}
+
+.preguntas {
+  display: none;
+  position: absolute;
+  z-index: 99999999999999999999999999;
+  top: 30%;
+  left: 30px;
+  padding: 20px;
+  width: 30%;
+  height: 39%;
+  border-radius: 46px;
+  -moz-border-radius: 46px;
+  -webkit-border-radius: 46px;
+  background-color: #3b3b3bc5;
+  
+  
+}
+
+.numeracion1,
+.numeracion2,
+.numeracion3,
+.numeracion4,
+.numeracion5 {
+  display: none;
+  font-family: Caveat;
+  font-weight: 300;
+  width: 80px;
+  height: auto;
+  left: 280px;
+  top: -100px;
+  font-size: 25px;
+  text-align: justify;
+}
+
+.selecciona {
+  top: -13%;
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+}
+
+.derecha {
+  left: 1500px !important;
+}
+
+.cuyo-imagen,
+.nea-imagen,
+.noa-imagen,
+.centro-imagen,
+.patagonia-imagen,
+.nea-cuyo-imagen,
+.centro-cuy-imagen,
+.pat-noa-imagen,
+.pat-nea-imagen,
+.pat-cuyo-imagen,
+.pat-cuyo-imagen,
+.pat-centro-imagen,
+.noa-nea-imagen,
+.noa-cuyo-imagen,
+.centro-noa-imagen,
+.centro-cuyo-imagen,
+.centro-nea-imagen {
+  display: none;
+  position: absolute;
+  margin-top: 0px;
+  width: 51%;
+}
+
+.indicador-comparaciones-texto{
+  display: none;
+  text-align: center;
+  top: 30%;
+  margin-top: 20%;
+  margin-left: -200px;
+  width: 32%;
+  height: 10%;
+  padding: 20px;
+  border-radius: 46px;
+  -moz-border-radius: 46px;
+  -webkit-border-radius: 46px;
+  background-color: #3b3b3b41;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+  font-size: 36px;
+  transform: translate(50%, 50%);
+}
+
+#continuarDerecha{
+  margin-top: -190px;
+  margin-left: 800px;
+  animation: arrow 700ms linear infinite;
+}
+
+@keyframes arrow {
+  0%, 20%, 50%, 80%, 100% {
+    -moz-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -moz-transform: translateX(-30px);
+    transform: translateX(-30px);
+  }
+  60% {
+    -moz-transform: translateX(-15px);
+    transform: translateX(-15px);
+  }
+}
+
+
+/* ///////////////////////////////////////////////////////////////////////// */
+
+.escalaMapa{
+  /* margin-top: -60px;
+  margin-left: -60px;
+  width: 220px; */
+  animation: scaleMap 1s;
+}
+@keyframes scaleMap{
+  0%{
+    transform: scale(0.3);
+  }
+  50%{
+    transform: scale(1.2);
+  }
+  100%{
+    transform: scale(1);
+  }
+}
+
+.escalaMapaColores{
+  /* margin-top: -60px;
+  margin-left: -60px;
+  width: 220px; */
+  animation: scaleMap2 0.5s;
+}
+@keyframes scaleMap2{
+  0%{
+    transform: scale(1);
+  }
+  50%{
+    transform: scale(1.15);
+  }
+  100%{
+    transform: scale(1);
+  }
+}

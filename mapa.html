@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <!--Import Google Icon Font-->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
+    rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <!--Import materialize.css-->
+  <link rel="stylesheet" href="css/index.css" />
+  <link rel="stylesheet" href="css/mapa.css" />
+  <link rel="stylesheet" href="css/1920notebook.css" />
+  <link rel="stylesheet" href="css/pixel2xl.css" />
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Energias Renovables</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <div id="mapa1-contenedor" class="mapa1-contenedor">
+    <img id="mapa1" class="mapa1" src="img/mapa/mapa_guia.png">
+     <div class="cuyo-sub" id="cuyo-sub">
+        <img id="region-cuyo" class="region-cuyo mostrar" src="img/mapa/cuyo.png">
+         
+        <img id="cuyo-color" class="cuyo-color" src="img/mapa/cuyo_color.png">
+    </div>
+
+    <div id="noa-sub" class="noa-sub">
+      <img id="region-noa" class="region-noa mostrar" src="img/mapa/noa.png">
+        
+      <img id="noa-color" class="noa-color" src="img/mapa/noa_color.png">
+    </div>
+
+    <div class="nea-sub" id="nea-sub">
+      <img id="region-nea" class="region-nea mostrar" src="img/mapa/nea.png">
+        
+      <img id="nea-color" class="nea-color" src="img/mapa/nea_color.png">
+    </div>
+
+    <div class="centro-sub" id="centro-sub">
+      <img id="region-centro" class="region-centro mostrar" src="img/mapa/centro.png">
+        
+      <img id="centro-color" class="centro-color" src="img/mapa/centro_color.png">
+    </div>
+
+    <div class="patagonia-sub" id="patagonia-sub">
+      <img id="region-patagonia" class="region-patagonia mostrar" src="img/mapa/patagonia.png">
+        
+      <img id="patagonia-color" class="patagonia-color" src="img/mapa/patagonia_color.png">
+    </div>
+
+ 
+
+  </div>
+
+  <div class="preguntas mostrar" id="preguntas">
+    <h1 id="Selecciona" class="selecciona pregunta-cuyo mostrar">Seleccioná en el mapa la respuesta correcta</h1>
+    <h1 id="numeracion1" class="numeracion1 mostrar">1 de 5</h1>
+    <h1 id="pregunta-cuyo" class="pregunta-cuyo mostrar">¿Cuál crees que es la región donde se desarolla mayoramente la energía solar?</h1>
+
+    <h1 id="numeracion2" class="numeracion2">2 de 5</h1>
+    <h1 id="pregunta-patagonia" class="pregunta-patagonia">¿En qué zona crees que se encuentra la provincia con mayor desarollo dentro de las energías renovables?</h1>
+    <h1 id="numeracion3" class="numeracion3">3 de 5</h1>
+    <h1 id="pregunta-centro" class="pregunta-centro">¿Cuál es la región en la que la energía renovable proporciona mayor aporte hacia los Programas Nacionales?</h1>
+    <h1 id="numeracion4" class="numeracion4">4 de 5</h1>
+    <h1 id="pregunta-nea" class="pregunta-nea">¿Dónde crees que se encuentran la mayor parte de las plantas hidráulicas del país?</h1>
+    <h1 id="numeracion5" class="numeracion5">5 de 5</h1>
+    <h1 id="pregunta-noa" class="pregunta-noa">¿Luego de la Patagonia, cuál es la zona con mayor variedad de energías renovables?</h1>
+  </div>
+
+  <div class="indicador-comparaciones-texto" id="indicador-comparaciones-texto">
+    <p>
+      Compará los datos de las regiones 
+    </p>
+    <img id="continuarDerecha" class="continuarDerecha" src="img/continuar_derecha.png" alt="continuar">
+  </div>
+
+  <div class="estadistica-cuyo" id="estadistica-cuyo">
+    <img id="cuyo-imagen" class="cuyo-imagen" src="img/graficosMapa/cuyo.png">
+  </div>
+  <div class="estadistica-nea" id="estadistica-nea">
+    <img id="nea-imagen" class="nea-imagen" src="img/graficosMapa/nea.png">
+  </div>
+  <div class="estadistica-noa" id="estadistica-noa">
+    <img id="noa-imagen" class="noa-imagen" src="img/graficosMapa/noa.png">
+  </div>
+  <div class="estadistica-centro" id="estadistica-centro">
+    <img id="centro-imagen" class="centro-imagen" src="img/graficosMapa/centro.png">
+  </div>
+  <div class="estadistica-patagonia" id="estadistica-patagonia">
+    <img id="patagonia-imagen" class="patagonia-imagen" src="img/graficosMapa/patagonia.png">
+  </div>
+
+  <div class="pat-noa" id="pat-noa">
+    <img id="pat-noa-imagen" class="pat-noa-imagen" src="img/graficosMapa/pat_noa.png">
+  </div>
+
+  <div class="pat-nea" id="pat-nea">
+    <img id="pat-nea-imagen" class="pat-nea-imagen" src="img/graficosMapa/pat_nea.png">
+  </div>
+
+  <div class="pat-cuyo" id="pat-cuyo">
+    <img id="pat-cuyo-imagen" class="pat-cuyo-imagen" src="img/graficosMapa/pat_cuyo.png">
+  </div>
+
+  <div class="pat-centro" id="pat-centro">
+    <img id="pat-centro-imagen" class="pat-centro-imagen" src="img/graficosMapa/pat_centro.png">
+  </div>
+
+  <div class="centro-noa" id="centro-noa">
+    <img id="centro-noa-imagen" class="centro-noa-imagen" src="img/graficosMapa/centro_noa.png">
+  </div>
+
+  <div class="centro-nea" id="centro-nea">
+    <img id="centro-nea-imagen" class="centro-nea-imagen" src="img/graficosMapa/centro_nea.png">
+  </div>
+
+  <div class="centro-cuyo" id="centro-cuyo">
+    <img id="centro-cuyo-imagen" class="centro-cuyo-imagen" src="img/graficosMapa/centro_cuyo.png">
+  </div>
+
+  <div class="noa-nea" id="noa-nea">
+    <img id="noa-nea-imagen" class="noa-nea-imagen" src="img/graficosMapa/noa_nea.png">
+  </div>
+
+  <div class="noa-cuyo" id="noa-cuyo">
+    <img id="noa-cuyo-imagen" class="noa-cuyo-imagen" src="img/graficosMapa/noa_cuyo.png">
+  </div>
+
+  <div class="nea-cuyo" id="nea-cuyo">
+    <img id="nea-cuyo-imagen" class="nea-cuyo-imagen" src="img/graficosMapa/nea_cuyo.png">
+  </div>
+
+
+
+
+
+ <script src="js/mapa.js" charset="UTF-8"></script>
+</body>

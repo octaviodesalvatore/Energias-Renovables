@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <!--Import Google Icon Font-->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link
+
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
+    rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <!--Import materialize.css-->
+  <link rel="stylesheet" href="css/index.css" />
+  <link rel="stylesheet" href="css/1920notebook.css" />
+  <link rel="stylesheet" href="css/pixel2xl.css" />
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Energias Renovables</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="top">
+      <div class="titulo" id="titulo">
+        <h1>Energías Renovables</h1>
+      </div>
+      <div class="slogan">
+        <h2>Conocé el consumo de las energías renovables en Argentina</h2>
+      </div>
+      <div class="continuar1" id="continuar1">
+        <img src="img/continuar.png" alt="continuar">
+      </div>
+
+    </div>
+  <main id="main">
+      <ul id="menu" class="menu">
+        <div id="continuar" class="continuar visibleContinuar">
+          <h3>Ahora completa el cuestionario e informate sobre las energías en la Argentina</h3>
+            <a id="continuar-menu" class="continuar-menu" href ="./mapa.html"><img src="img/continuar.png" alt="continuar"></a>
+        </div>
+        <li class="menu-item menu-info mostrar1" id="info1-sinColor">
+          <img src="img/iconos/info.png">
+        </li>
+        <li class="menu-item menu-info" id="info1-color">
+          <img src="img/IconosVerdes/info_verde.png">
+        </li>
+
+
+        <li class="menu-item menu-solar mostrar1" id="solar1-sinColor">
+          <img src="img/iconos/solar.png">
+        </li>
+        <li class="menu-item menu-solar" id="solar1-color">
+          <img src="img/IconosVerdes/solar_verde.png">
+        </li>
+
+
+        <li class="menu-item menu-hidraulica mostrar1" id="hidraulica1-sinColor">
+          <img src="img/iconos/hidraulica.png">
+        </li>
+        <li class="menu-item menu-hidraulica" id="hidraulica1-color">
+          <img src="img/IconosVerdes/hidraulica_verde.png">
+        </li>
+
+
+        <li class="menu-item menu-biomasa mostrar1" id="biomasa1-sinColor">
+          <img src="img/iconos/biomasa.png">
+        </li>
+        <li class="menu-item menu-biomasa" id="biomasa1-color">
+          <img src="img/IconosVerdes/biomasa_verde.png">
+        </li>
+
+
+        <li class="menu-item menu-eolica mostrar1" id="eolica1-sinColor">
+          <img src="img/iconos/eolica.png">
+        </li>
+        <li class="menu-item menu-eolica" id="eolica1-color">
+          <img src="img/IconosVerdes/eolica_verde.png">
+        </li>
+
+
+
+        <li class="menu-item menu-geotermica mostrar1" id="geotermica1-sinColor">
+          <img src="img/iconos/geotermica.png">
+        </li>
+        <li class="menu-item menu-geotermica" id="geotermica1-color">
+          <img src="img/IconosVerdes/geotermica_verde.png">
+        </li>
+
+      </ul>
+  </main>
+  <div id="detalle">
+
+    <div class="continuar2" id="continuar2">
+      <a href ="./mapa.html"><img src="img/continuar_derecha.png" alt="continuar"></a>
+    </div>
+
+    <span id="detalle-cerrar">X</span>
+
+    <ul id="menu-detalle">
+        <li class="menu-info mostrar" id="menu-sinColor">
+          <img src="img/iconos/info.png">
+        </li>
+        <li class="menu-info" id="menu-info-color">
+          <img src="img/IconosVerdes/info_verde.png">
+        </li>
+
+
+      <li class="menu-solar mostrar" id="solar-sinColor">
+        <img src="img/iconos/solar.png">
+      </li>
+      <li class="menu-solar" id="menu-solar-color">
+        <img src="img/IconosVerdes/solar_verde.png">
+      </li>
+
+
+      <li class="menu-hidraulica mostrar" id="hidraulica-sinColor">
+        <img src="img/iconos/hidraulica.png">
+      </li>
+      <li class="menu-hidraulica" id="menu-hidraulica-color">
+        <img src="img/IconosVerdes/hidraulica_verde.png">
+      </li>
+
+
+      <li class="menu-biomasa mostrar" id="biomasa-sinColor">
+        <img src="img/iconos/biomasa.png">
+      </li>
+      <li class="menu-biomasa" id="menu-biomasa-color">
+        <img src="img/IconosVerdes/biomasa_verde.png">
+      </li>
+
+
+
+      <li class="menu-eolica mostrar" id="eolica-sinColor">
+        <img src="img/iconos/eolica.png">
+      </li>
+      <li class="menu-eolica" id="menu-eolica-color">
+        <img src="img/IconosVerdes/eolica_verde.png">
+      </li>
+
+
+      <li class="menu-geotermica mostrar" id="geotermica-sinColor">
+        <img src="img/iconos/geotermica.png">
+      </li>
+      <li class="menu-geotermica" id="menu-geotermica-color">
+        <img src="img/IconosVerdes/geotermica_verde.png">
+      </li>
+
+    </ul>
+
+
+
+    <div id="detalle-info" class="detalle-item">
+      <h1 id='titulo-solar'>Información</h1>
+      <div id="detalle-informacion" class="detalle-subitem">
+
+
+        <!-- ////////// -->
+
+
+      <!--  -->
+
+
+
+
+        <img id="info-1" class="detalle-info mostrar" src="img/energias/info/info.png">
+
+          <!-- <h1 id="texto-info">Para las energías renovables, 2019 fue un año agridulce. Combinadas, hoy hay 2590 MW de potencia renovable. Las renovables agregaron más de 1830 MW de potencia durante los últimos dos años, más que todas las convencionales sumadas (1686 MW). </h1> -->
+      </div>
+
+      <div class="info-contenedor" id="info-contenedor">
+
+        <h1 id="texto-info" class="texto mostrar">
+
+          <span class="w600">8.100.000</span> <br> <span class="w500">de trabajadores en energías renovables</span> 
+        
+        </h1>
+
+        <img id="info-estadistica" class="info-estadistica" src="img/energias/solar/solar_trabajo.png" >
+
+      </div>
+
+
+      
+
+      <div class="info-contenedor1" id="info-contenedor1">
+        <h1 id="texto-info-1" class="texto mostrar">       <span class="w500">Asia produce el</span>       <span class="w600">44%</span> <br> <span class="w500">de la energía mundial</span> 
+
+        </h1>
+        <img id="info-estadistica1" class="info-estadistica" src="img/energias/info/asia.png">
+
+      </div>
+
+
+
+
+      <div class="info-contenedor2" id="info-contenedor2">
+        <h1 id="texto-info-2" class="texto mostrar">
+
+
+           <span class="w600">288.900 millones</span> <br> <span class="w500">de euros invertidos en 2018 en energías renovables</span> 
+        
+        </h1>
+        <img id="info-estadistica2" class="info-estadistica" src="img/energias/solar/solar_inversion.png" style="margin-top: 40px; margin-left: 10px;">
+      </div>
+
+
+
+      <div class="info-contenedor3" id="info-contenedor3">
+        <h1 id="texto-info-3" class="texto mostrar"><span class="w600">2537 GW</span><br><span class="w500">de consumo mundial</span>
+        </h1>
+
+        <img id="info-estadistica3" class="info-estadistica" src="img/energias/info/info_mundo.png">
+
+        
+     </div>
+
+     <div id="contenedor-info-grande" class="contenedor-info-grande">
+      <h1 id="texto-info-4" class="texto mostrar">La obtención de energía es irregular<br><br>Diversidad geográfica de los recursos</h1>
+      <h1 id="texto-info-5" class="texto mostrar">Son ilimitadas<br><br>No generan gases de efecto invernadero</h1>
+      <hr>
+      <img id="pros1" class="pros1" src="img/energias/solar/pros.png">
+      <img id="pros2" class="pros1" src="img/energias/solar/pros.png">
+      <img id="contras1" class="contras1" src="img/energias/solar/contras.png">
+      <img id="contras2" class="contras1" src="img/energias/solar/contras.png">
+      
+   </div>
+
+
+
+
+    </div>
+
+
+    <!-- SOLARRRRRRRR -->
+
+    <div id="detalle-solar" class="detalle-item">
+      <div id="solar-info" class="detalle-subitem">
+        <img id="solar-info-2" class="detalle-solar mostrar" src="img/energias/solar/graficoSolar1.png">
+        <img id="solar-info-1" class="detalle-nube mostrar" src="img/energias/solar/graficoSolar3.png">
+        <img id="solar-info-3" class="detalle-solar" src="img/energias/solar/graficoSolar2.png">
+          <h1 id='titulo-solar'>Solar</h1>
+
+          <div class="solar-contenedor" id="solar-contenedor">
+            <h1 id="texto-solar" class="texto mostrar">
+
+              <span class="w600">3.700.000</span> <br> <span class="w500">trabajadores</span> 
+            
+            </h1>
+
+            <img id="solar-estadistica" class="solar-estadistica" src="img/energias/solar/solar_trabajo.png">
+          </div>
+
+          <div class="solar-contenedor1" id="solar-contenedor1">
+            <h1 id="texto-solar-1" class="texto mostrar"><span class="w600">46%</span> <br> <span class="w500">del consumo mundial</span> 
+
+            </h1>
+            <img id="solar-estadistica1" class="solar-estadistica" src="img/energias/solar/china.png">
+            <img id="solar-estadistica12" class="solar-estadistica" src="img/energias/solar/usa.png">
+            <img id="solar-estadistica123" class="solar-estadistica" src="img/energias/solar/alemania.png">
+          </div>
+
+          <div class="solar-contenedor2" id="solar-contenedor2">
+            <h1 id="texto-solar-2" class="texto mostrar">
+
+
+               <span class="w600">139.700 millones</span> <br> <span class="w500">de euros invertidos en 2018</span> 
+            
+            </h1>
+            <img id="solar-estadistica2" class="solar-estadistica" src="img/energias/solar/solar_inversion.png" style="margin-top: 40px; margin-left: 10px;">
+          </div>
+
+          <div class="solar-contenedor3" id="solar-contenedor3">
+            <h1 id="texto-solar-3" class="texto mostrar"><span class="w500"> Zonas del país con mayor consumo</span></h1>
+
+            <h1 id="texto-solar-31" class="texto mostrar">
+
+              <span class="w500">NOA</span> <br> <span class="w600">35%</span> 
+
+            </h1>
+            <h1 id="texto-solar-32" class="texto mostrar">
+
+              <span class="w500">Cuyo</span> <br> <span class="w600">65%</span> 
+
+            </h1>
+
+            <img id="solar-estadistica3" class="solar-estadistica" src="img/energias/solar/solar_noa.png">
+            <img id="solar-estadistica31" class="solar-estadistica" src="img/energias/solar/solar_cuyo.png">
+         </div>
+
+         <div id="contenedor-solar-grande" class="contenedor-solar-grande">
+            <h1 id="texto-solar-4" class="texto mostrar">Tiene una eficiencia relativamente baja <br><br>No es constante ya que fluctúa de día y por la noche no está disponible</h1>
+            <h1 id="texto-solar-5" class="texto mostrar">La luz solar es abundante y está muy disponible <br> No requiere extracción constante de materiales para su funcionamiento</h1>
+            <hr>
+            <img id="pros1" class="pros1" src="img/energias/solar/pros.png">
+            <img id="pros2" class="pros1" src="img/energias/solar/pros.png">
+            <img id="contras1" class="contras1" src="img/energias/solar/contras.png">
+            <img id="contras2" class="contras1" src="img/energias/solar/contras.png">
+            
+         </div>
+
+      </div>
+      <img id="solar-grafico" class="solar-grafico" src="img/graficoEnergia/grafico_solar.png">
+    </div>
+  
+    <!-- /////////////ACA ARRANCA HIDRAULICA/////////////////// -->
+    <div id="detalle-hidraulica" class="detalle-item">
+      <div id="hidraulica-info" class="detalle-subitem">
+        <img id="hidraulica-info-1" class="detalle-hidraulica mostrar" src="img/energias/hidraulica/hidraulica1.png">
+        <img id="hidraulica-info-2" class="detalle-hidraulica mostrar" src="img/energias/hidraulica/hidraulica2.png">
+        <img id="hidraulica-info-3" class="detalle-hidraulica" src="img/energias/hidraulica/hidraulica3.png">
+        <h1 id='titulo-solar'>Hidráulica</h1>
+
+        <div class="hidraulica-contenedor" id="hidraulica-contenedor">
+
+          <h1 id="texto-agua" class="texto mostrar">
+
+            <span class="w600">200.000</span> <br> <span class="w500">trabajadores</span> 
+          
+          </h1>
+
+          <img id="hidraulica-estadistica" class="hidraulica-estadistica" src="img/energias/solar/solar_trabajo.png">
+
+          </div>
+
+
+
+          <div class="hidraulica-contenedor1" id="hidraulica-contenedor1">
+            <h1 id="texto-agua-1" class="texto mostrar">              <span class="w500">País líder en consumo con</span> <br> <span class="w600">380 GW</span> 
+
+            </h1>
+            <img id="hidraulica-estadistica1" class="hidraulica-estadistica" src="img/energias/hidraulica/china_lider.png">
+            <!-- <img id="hidraulica-estadistica12" class="hidraulica-estadistica" src="img/energias/solar/usa.png">
+            <img id="hidraulica-estadistica123" class="hidraulica-estadistica" src="img/energias/solar/alemania.png"> -->
+
+          </div>
+
+
+
+
+          <div class="hidraulica-contenedor2" id="hidraulica-contenedor2">
+            <h1 id="texto-agua-2" class="texto mostrar">
+
+
+               <span class="w600">16.000 millones</span> <br> <span class="w500">de euros invertidos en 2018</span> 
+            
+            </h1>
+            <img id="hidraulica-estadistica2" class="hidraulica-estadistica" src="img/energias/solar/solar_inversion.png" style="margin-top: 40px; margin-left: 10px;">
+          </div>
+
+
+          <div class="hidraulica-contenedor3" id="hidraulica-contenedor3">
+            <h1 id="texto-agua-3" class="texto mostrar"><span class="w500"> Zonas del país con mayor consumo</span></h1>
+
+            <h1 id="texto-agua-31" class="texto mostrar">
+
+              <span class="w500">NOA</span> <br> <span class="w600">32%</span> 
+
+            </h1>
+            <h1 id="texto-agua-32" class="texto mostrar">
+
+              <span class="w500">Cuyo</span> <br> <span class="w600">52%</span> 
+
+            </h1>
+
+            <img id="hidraulica-estadistica3" class="hidraulica-estadistica" src="img/energias/hidraulica/hidrau_noa.png">
+            <img id="hidraulica-estadistica31" class="hidraulica-estadistica" src="img/energias/hidraulica/hidrau_cuyo.png">
+
+            
+         </div>
+
+
+         <div id="contenedor-hidraulica-grande" class="contenedor-hidraulica-grande">
+          <h1 id="texto-agua-4" class="texto mostrar">Es difícil encontrar el lugar idóneo<br><br>Montar la central hidroeléctrica es caro</h1>
+          <h1 id="texto-agua-5" class="texto mostrar">Producción flexible <br><br> Es muy estable a diferencia de otras energías como la solar</h1>
+          <hr>
+          <img id="pros1" class="pros1" src="img/energias/solar/pros.png">
+          <img id="pros2" class="pros1" src="img/energias/solar/pros.png">
+          <img id="contras1" class="contras1" src="img/energias/solar/contras.png">
+          <img id="contras2" class="contras1" src="img/energias/solar/contras.png">
+          
+       </div>
+
+            <img id="agua-grafico" class="agua-grafico" src="img/graficoEnergia/grafico_hidraulica.png">
+
+   
+      </div>
+    </div>
+
+    <!-- ////////BIOMASA////////////// -->
+
+    <div id="detalle-biomasa" class="detalle-item">
+      <div id="biomasa-info" class="detalle-subitem">
+        <img id="biomasa-info-1" class="detalle-biomasa mostrar" src="img/energias/biomasa/biomasa1.png">
+        <img id="biomasa-info-2" class="detalle-biomasa mostrar" src="img/energias/biomasa/biomasa2.png">
+        <img id="biomasa-info-3" class="detalle-biomasa" src="img/energias/biomasa/biomasa3.png">
+        <h1 id='titulo-solar'>Biomasa</h1>
+
+
+
+        <div class="biomasa-contenedor" id="biomasa-contenedor">
+
+          <h1 id="texto-biomasa" class="texto mostrar">
+
+            <span class="w600">2.950.000</span> <br> <span class="w500">trabajadores</span> 
+          
+          </h1>
+
+          <img id="biomasa-estadistica" class="biomasa-estadistica" src="img/energias/solar/solar_trabajo.png">
+
+          </div>
+
+
+
+          <div class="biomasa-contenedor1" id="biomasa-contenedor1">
+            <h1 id="texto-biomasa-1" class="texto mostrar"><span class="w500">Representa el</span> <span class="w600">35%</span><span class="w500">de la energía consumida en el país</span> 
+
+            </h1>
+            <img id="biomasa-estadistica1" class="biomasa-estadistica" src="img/energias/biomasa/finlandia.png">
+
+          </div>
+
+
+          <div class="biomasa-contenedor2" id="biomasa-contenedor2">
+            <h1 id="texto-biomasa-2" class="texto mostrar">
+
+
+               <span class="w600">9.000 millones</span> <br> <span class="w500">de euros invertidos en 2018</span> 
+            
+            </h1>
+            <img id="biomasa-estadistica2" class="biomasa-estadistica" src="img/energias/solar/solar_inversion.png" style="margin-top: 40px; margin-left: 10px;">
+          </div>
+
+
+
+          <div class="biomasa-contenedor3" id="biomasa-contenedor3">
+            <h1 id="texto-biomasa-3" class="texto mostrar"><span class="w500"> Zonas del país con mayor consumo</span></h1>
+
+            <h1 id="texto-biomasa-31" class="texto mostrar">
+
+              <span class="w500">NOA</span> <br> <span class="w600">49%</span> 
+
+            </h1>
+            <h1 id="texto-biomasa-32" class="texto mostrar">
+
+              <span class="w500">NEA</span> <br> <span class="w600">30%</span> 
+
+            </h1>
+
+            <img id="biomasa-estadistica3" class="biomasa-estadistica" src="img/energias/biomasa/bio_noa.png">
+            <img id="biomasa-estadistica31" class="biomasa-estadistica" src="img/energias/biomasa/bio_nea.png">
+
+            
+         </div>
+
+         <div id="contenedor-biomasa-grande" class="contenedor-biomasa-grande">
+          <h1 id="texto-biomasa-4" class="texto mostrar">Se generan cenizas<br><br>Se necesita una zona de almacenamiento</h1>
+
+          <h1 id="texto-biomasa-5" class="texto mostrar">Es poco contaminante<br><br> Bajo costo, puede costar un tercio del costo de otros combustibles</h1>
+          <hr>
+          <img id="pros1" class="pros1" src="img/energias/solar/pros.png">
+          <img id="pros2" class="pros1" src="img/energias/solar/pros.png">
+          <img id="contras1" class="contras1" src="img/energias/solar/contras.png">
+          <img id="contras2" class="contras1" src="img/energias/solar/contras.png">
+          
+       </div>
+
+
+
+
+
+
+            <!-- <h1 id="texto-biomasa" class="texto mostrar">Buenos Aires, Córdoba, Entre Ríos y Santa Fe concentran 17 de los 27 proyectos presentados en la Argentina para aprovechar energéticamente fuentes biomásicas</h1> -->
+            <h1 id="texto-biomasa-1" class="texto mostrar">Uno de los aprovechamientos de mayor importancia es el dedicado a la fabricación de carbón vegetal.</h1>
+       
+            <img id="biomasa-grafico" class="biomasa-grafico" src="img/graficoEnergia/grafico_biomasa.png">
+    
+
+
+        
+      </div>
+
+    </div>
+
+
+
+    <div id="detalle-eolica" class="detalle-item">
+      <div id="eolica-info" class="detalle-subitem">
+        <img id="eolica-info-1" class="detalle-eolica mostrar" src="img/energias/eolica/eolica-01.png">
+        <img id="eolica-info-2" class="detalle-eolica mostrar" src="img/energias/eolica/eolica-02.png">
+        <img id="eolica-info-3" class="detalle-eolica" src="img/energias/eolica/eolica-03.png">
+        <h1 id='titulo-solar'>Eólica</h1>
+
+
+        <div class="eolica-contenedor" id="eolica-contenedor">
+
+          <h1 id="texto-eolica" class="texto mostrar">
+
+            <span class="w600">1.100.000</span> <br> <span class="w500">trabajadores</span> 
+          
+          </h1>
+
+          <img id="eolica-estadistica" class="eolica-estadistica" src="img/energias/solar/solar_trabajo.png">
+
+        </div>
+
+
+        
+
+        <div class="eolica-contenedor1" id="eolica-contenedor1">
+          <h1 id="texto-eolica-1" class="texto mostrar">              <span class="w500">País líder en consumo con </span><span class="w600">48 GW</span> 
+
+          </h1>
+          <img id="eolica-estadistica1" class="eolica-estadistica" src="img/energias/hidraulica/china_lider.png">
+          <!-- <img id="eolica-estadistica12" class="eolica-estadistica" src="img/energias/solar/usa.png">
+          <img id="eolica-estadistica123" class="eolica-estadistica" src="img/energias/solar/alemania.png"> -->
+
+        </div>
+
+
+
+
+        <div class="eolica-contenedor2" id="eolica-contenedor2">
+          <h1 id="texto-eolica-2" class="texto mostrar">
+
+
+             <span class="w600">134.100 millones</span> <br> <span class="w500">de euros invertidos en 2018</span> 
+          
+          </h1>
+          <img id="eolica-estadistica2" class="eolica-estadistica" src="img/energias/solar/solar_inversion.png" style="margin-top: 40px; margin-left: 10px;">
+        </div>
+
+
+
+        <div class="eolica-contenedor3" id="eolica-contenedor3">
+          <h1 id="texto-eolica-3" class="texto mostrar"><span class="w500"> Zonas del país con mayor consumo</span></h1>
+
+          <h1 id="texto-eolica-31" class="texto mostrar">
+
+            <span class="w500">Centro</span> <br> <span class="w600">32%</span> 
+
+          </h1>
+          <h1 id="texto-eolica-32" class="texto mostrar">
+
+            <span class="w500">Patagonia</span> <br> <span class="w600">59%</span> 
+
+          </h1>
+
+          <img id="eolica-estadistica3" class="eolica-estadistica" src="img/energias/eolica/eolica_centro.png">
+          <img id="eolica-estadistica31" class="eolica-estadistica" src="img/energias/eolica/eolica_patagonia.png">
+
+          
+       </div>
+
+       <div id="contenedor-eolica-grande" class="contenedor-eolica-grande">
+        <h1 id="texto-eolica-4" class="texto mostrar">Es preciso construir líneas de alta tensión<br><br>Falta de seguridad en la existencia de viento y la velocidad no puede exceder un límite</h1>
+        <h1 id="texto-eolica-5" class="texto mostrar">Cuenta con una rápida instalción<br><br>Es adaptable a casi cualquier espacio y permite la autoalimentación de viviendas</h1>
+        <hr>
+        <img id="pros1" class="pros1" src="img/energias/solar/pros.png">
+        <img id="pros2" class="pros1" src="img/energias/solar/pros.png">
+        <img id="contras1" class="contras1" src="img/energias/solar/contras.png">
+        <img id="contras2" class="contras1" src="img/energias/solar/contras.png">
+        
+     </div>
+
+
+
+
+
+          <img id="eolica-grafico" class="eolica-grafico" src="img/graficoEnergia/grafico_eolica.png">
+
+
+
+      </div>
+    </div> 
+    <div id="detalle-geotermica" class="detalle-item">
+      <div id="eolica-info" class="detalle-subitem">
+        <img id="geotermica-info-1" class="detalle-geotermica mostrar" src="img/energias/geotermica/geotermica1.png">
+        <img id="geotermica-info-2" class="detalle-geotermica mostrar" src="img/energias/geotermica/geotermica2.png">
+        <img id="geotermica-info-3" class="detalle-geotermica" src="img/energias/geotermica/geotermica3.png">
+        <h1 id='titulo-solar'>Geotérmica</h1>
+
+
+
+
+
+
+        <div class="geotermica-contenedor" id="geotermica-contenedor">
+
+          <h1 id="texto-geotermica" class="texto mostrar">
+
+            <span class="w600">150.000</span> <br> <span class="w500">trabajadores</span> 
+          
+          </h1>
+
+          <img id="geotermica-estadistica" class="geotermica-estadistica" src="img/energias/solar/solar_trabajo.png">
+
+        </div>
+
+
+        
+
+        <div class="geotermica-contenedor1" id="geotermica-contenedor1">
+          <h1 id="texto-geotermica-1" class="texto mostrar">              <span class="w500">País líder en consumo con</span> <br> <span class="w600">3.5 GW</span> 
+
+          </h1>
+          <img id="geotermica-estadistica1" class="geotermica-estadistica" src="img/energias/geotermica/usa_lider.png">
+          <!-- <img id="geotermica-estadistica12" class="geotermica-estadistica" src="img/energias/solar/usa.png">
+          <img id="geotermica-estadistica123" class="geotermica-estadistica" src="img/energias/solar/alemania.png"> -->
+
+        </div>
+
+
+
+
+        <div class="geotermica-contenedor2" id="geotermica-contenedor2">
+          <h1 id="texto-geotermica-2" class="texto mostrar">
+
+
+             <span class="w600">2.000 millones</span> <br> <span class="w500">de euros invertidos en 2018</span> 
+          
+          </h1>
+          <img id="geotermica-estadistica2" class="geotermica-estadistica" src="img/energias/solar/solar_inversion.png" style="margin-top: 40px; margin-left: 10px;">
+        </div>
+
+
+
+        <div class="geotermica-contenedor3" id="geotermica-contenedor3">
+          <h1 id="texto-geotermica-3" class="texto mostrar"><span class="w500">Argentina posee un potencial geotérmico para generar más de</span><br><span class="w600">2000 MW</span></h1>
+
+
+
+          <img id="geotermica-estadistica3" class="geotermica-estadistica" src="img/energias/geotermica/geo_arg.png">
+          <!-- <img id="geotermica-estadistica31" class="geotermica-estadistica" src="img/energias/solar/solar_cuyo.png"> -->
+
+          
+       </div>
+
+       <div id="contenedor-geotermica-grande" class="contenedor-geotermica-grande">
+        <h1 id="texto-geotermica-4" class="texto mostrar">No permite ser transportada<br><br>Contaminación de yacimientos acuíferos</h1>
+        <h1 id="texto-geotermica-5" class="texto mostrar">No está sujeta a precios internacionales<br><br>Menor emisión de CO2 respecto a la obtención de energía por combustión</h1>
+        <hr>
+        <img id="pros1" class="pros1" src="img/energias/solar/pros.png">
+        <img id="pros2" class="pros1" src="img/energias/solar/pros.png">
+        <img id="contras1" class="contras1" src="img/energias/solar/contras.png">
+        <img id="contras2" class="contras1" src="img/energias/solar/contras.png">
+        
+     </div>
+
+
+
+
+
+          <img id="geotermica-grafico" class="geotermica-grafico" src="img/graficoEnergia/grafico_geotermica.png">  
+
+
+      </div>
+      
+    </div>
+
+  </div>
+
+  <script src="js/index.js" charset="UTF-8"></script>
+</body>
